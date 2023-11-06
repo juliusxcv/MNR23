@@ -21,7 +21,7 @@ canvas {
 
 * { /* Alle Elemente */
     font-family: 'Planar';
-    font-variation-settings: 'slnt' 45, 'wght' 900;
+    font-variation-settings: 'slnt' 0, 'wght' 900;
 }
 
 h1 {

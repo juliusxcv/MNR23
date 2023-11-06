@@ -87,8 +87,9 @@ function draw() {
     fill(0)
     strokeWeight(0)
     stroke(0)
-    textSize(100)
-    textFont('Arial Black')
+    textSize(200)
+    textStyle(BOLD)
+    textFont('Planar')
     text("23", 0, 0);
 
     
