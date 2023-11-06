@@ -104,6 +104,9 @@ function draw() {
     textSize(30);
     text("START Eibenstr 9", 0-width/2+20, 0+height/2-20);
 
+    textSize(30);
+    text("20 00 Uhr", 0-width/2+20, 0+height/2-60);
+
     textAlign(RIGHT, CENTER)
     textSize(30);
     text("END Wasserwerkstr 94", 0+width/2-20, 0+height/2-20);
