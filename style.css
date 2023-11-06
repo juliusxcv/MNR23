@@ -25,7 +25,7 @@ canvas {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 10vw;
     margin: 0;
     padding: 0;
 }
@@ -96,9 +96,9 @@ a:hover {
 .sr500 {
     mix-blend-mode: exclusion;
     position: absolute;
-    width: 500%;
+    width: 900%;
     top: 25%;
-    transform: translate(-10%,0%) rotate(0deg);
+    transform: translate(0%,0%) rotate(0deg);
     transform-origin: bottom left;
 }
 
