@@ -1,9 +1,119 @@
+@font-face {
+    font-family: 'Planar';
+    src: url('data/GT-Planar-Trial-VF.woff2') format('woff2-variations');
+    font-weight: 100 900;
+}
+
 body {
+    background-color: #00039b;
     overflow: hidden;
     padding: 0;
     margin: 0;
 }
 
 canvas {
+    position: fixed;
     display: inline-block;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+* { /* Alle Elemente */
+    font-family: 'Planar';
+    font-variation-settings: 'slnt' 45, 'wght' 900;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left:10px;
+    background: red;
+}
+
+a {
+    color: #1600da;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/*ID's*/
+#maincontent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 9999;
+}
+
+#mnr23-container {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*Klassen*/
+
+.MNRTitle {
+    font-size: 5em;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.bike {
+    width: 50%;
+    position: absolute;
+    /* translate: (0%, -500%); */
+    pointer-events: none;
+}
+
+
+.wheel {
+    position: absolute;
+    width: 50%;
+    transform: rotate(3deg);
+    transform-origin: center;
+}
+
+.sr500 {
+    position: absolute;
+    width: 500%;
+    transform: rotate(0deg);
+    transform-origin: center;
+}
+
+.Nav_Item {
+    margin-right: 20px;
 }
