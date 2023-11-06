@@ -8,7 +8,7 @@ let dialangle = 0
 function setup() {
     pixelDensity(1)
     let canvas = createCanvas(windowWidth, windowHeight);
-    canvas.parent('mnr23-container');
+    canvas.parent('canvasContent');
     noiseSeed(04679836528934789); // set the noise seed for consistency
     for (let i = 0; i < 20; i++) {
         let radius = map(noise(i * 0.5), 0.1, 1, 0.1, 500); //  Perlin noise for dispersion
