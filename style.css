@@ -87,8 +87,8 @@ a:hover {
 .sr500 {
     /* mix-blend-mode: exclusion; */
     position: absolute;
-    width: 500%;
-    /* top: 25%; */
+    width: 100%;
+    top: 25%;
     transform-origin: bottom left;
-    z-index: 2;
+    z-index: -2;
 }

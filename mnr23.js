@@ -4,6 +4,10 @@ let xLoading = -200;
 let cSize = 500;
 let dialangle = 0
 
+function preload() {
+    img = loadImage('data/sr500.png');
+}
+
 
 function setup() {
     pixelDensity(1)
@@ -22,14 +26,15 @@ function setup() {
         objects.push(new Orbiter(radius, lines));
     }
 
-
-
     
+
 }
 
 function draw() {
     translate(width / 2, height / 2);
     background(0);
+
+    image(img, width/2*-1, height/2*-1)
 
 
     fill(0, 0, 0, 0); // set fill to white
@@ -65,15 +70,6 @@ function draw() {
     ellipse(0, 0, 500, 500);
     pop()
 
-    //Cursor
-    push()
-    strokeWeight(0);
-    blendMode(DARKEST);
-    fill (255,0,0)
-    ellipse(mouseX-width/2, mouseY-height/2, 300, 300);
-    pop()
-
-     
 
     // TYPO
     strokeWeight(1)
@@ -87,6 +83,14 @@ function draw() {
     textStyle(BOLD)
     textFont('Planar')
     text("23", 0, 0);
+
+        //Cursor
+    push()
+    strokeWeight(0);
+    blendMode(DARKEST);
+    fill (255,0,0)
+    ellipse(mouseX-width/2, mouseY-height/2, 300, 300);
+    pop()
 
     strokeWeight(2)
     stroke(255)
@@ -123,8 +127,10 @@ function draw() {
         xLoading = width/2*-1+20;
     }
     pop()
+    
 
 }
+
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
