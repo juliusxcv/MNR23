@@ -83,36 +83,35 @@ function draw() {
     fill(0)
     strokeWeight(0)
     stroke(0)
-    textSize(200)
+    textSize(300)
     textStyle(BOLD)
     textFont('Planar')
     text("23", 0, 0);
 
     strokeWeight(2)
     stroke(255)
-    textSize(60);
-    textFont('Arial Black');
+    textSize(100);
     fill(255)
     text("MIDNIGHT RUN", 0, 0);
 
 
     fill(255)
     strokeWeight(0)
-    textSize(20);
-    text("22.11.2023", 0, 0-height/2+20);
+    textSize(60);
+    text("22.11.2023", 0, 0-height/2+40);
 
     textAlign(LEFT, CENTER)
-    textSize(15);
+    textSize(30);
     text("START Eibenstr 9", 0-width/2+20, 0+height/2-20);
 
     textAlign(RIGHT, CENTER)
-    textSize(15);
+    textSize(30);
     text("END Wasserwerkstr 94", 0+width/2-20, 0+height/2-20);
 
     //Loadingbar
     push()
     blendMode(EXCLUSION);
-    strokeWeight(18);
+    strokeWeight(32);
     stroke(255);
     //strokeCap(SQUARE);
     line(width/2*-1+20, 0+height/2-20, xLoading, 0+height/2-20);

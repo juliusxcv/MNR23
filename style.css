@@ -85,10 +85,10 @@ a:hover {
 }
 
 .sr500 {
-    mix-blend-mode: exclusion;
+    /* mix-blend-mode: exclusion; */
     position: absolute;
-    width: 900%;
-    top: 25%;
-    transform: translate(0%,0%) rotate(0deg);
+    width: 500%;
+    /* top: 25%; */
     transform-origin: bottom left;
+    z-index: 2;
 }
