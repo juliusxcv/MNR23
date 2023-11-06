@@ -39,7 +39,4 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
 
-function mousePressed() {
-    clear();
-}
 

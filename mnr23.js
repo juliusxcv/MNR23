@@ -57,17 +57,6 @@ function draw() {
     if (cSize > 0) {
         cSize = -1500;
     }
-
-    //Loadingbar
-    strokeWeight(15);
-    stroke(255);
-    //strokeCap(SQUARE);
-    line(-180, 0+height/2-20, xLoading, 0+height/2-20);
-    xLoading += 1;
-    if (xLoading > 150) {
-        xLoading = -180;
-    }
-
     
     push()
     strokeWeight(0);
@@ -84,6 +73,13 @@ function draw() {
     ellipse(mouseX-width/2, mouseY-height/2, 300, 300);
     pop()
 
+     
+
+    // TYPO
+    strokeWeight(1)
+    stroke(255)
+    textAlign(CENTER, CENTER);
+
     fill(0)
     strokeWeight(0)
     stroke(0)
@@ -92,38 +88,39 @@ function draw() {
     textFont('Planar')
     text("23", 0, 0);
 
-    
-
-    // TYPO
-    strokeWeight(1)
+    strokeWeight(2)
     stroke(255)
-    textAlign(CENTER, CENTER);
-
-    // strokeWeight(2)
-    // stroke(255)
-    // textSize(70);
-    // textFont('Arial Black');
-    // fill(255)
-    // text("MIDNIGHT RUN", 0, 0);
+    textSize(60);
+    textFont('Arial Black');
+    fill(255)
+    text("MIDNIGHT RUN", 0, 0);
 
 
+    fill(255)
+    strokeWeight(0)
+    textSize(20);
+    text("22.11.2023", 0, 0-height/2+20);
 
-    // fill(255)
-    // strokeWeight(0)
-    // textSize(20);
-    // textFont('Arial');
-    // text("22.11.2023", 0, 0-height/2+20);
+    textAlign(LEFT, CENTER)
+    textSize(15);
+    text("START Eibenstr 9", 0-width/2+20, 0+height/2-20);
 
-    // textAlign(LEFT, CENTER)
-    // textSize(20);
-    // textFont('Arial');
-    // text("START Eibenstr", 0-width/2+20, 0+height/2-20);
+    textAlign(RIGHT, CENTER)
+    textSize(15);
+    text("END Wasserwerkstr 94", 0+width/2-20, 0+height/2-20);
 
-    // textAlign(RIGHT, CENTER)
-    // textSize(20);
-    // textFont('Arial');
-    // text("END Wasserwerkstr", 0+width/2-20, 0+height/2-20);
-
+    //Loadingbar
+    push()
+    blendMode(EXCLUSION);
+    strokeWeight(18);
+    stroke(255);
+    //strokeCap(SQUARE);
+    line(width/2*-1+20, 0+height/2-20, xLoading, 0+height/2-20);
+    xLoading += 1;
+    if (xLoading > width/2-20) {
+        xLoading = width/2*-1+20;
+    }
+    pop()
 
 }
 
