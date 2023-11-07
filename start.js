@@ -28,8 +28,7 @@ function setup() {
 
 function draw() {
 
-    stroke(255);
-    strokeWeight(1);
+    strokeWeight(0);
     let hueFun = noise(frameCount * 0.01) * 360;
     fill(hueFun, 100, 100);
     let size = noise(frameCount * 0.01) * 200;
