@@ -89,7 +89,7 @@ function draw() {
     strokeWeight(0);
     blendMode(DARKEST);
     fill (255,0,0)
-    ellipse(mouseX-width/2, mouseY-height/2, 300, 300);
+    ellipse(mouseX-width/2, mouseY-height/2, 400, 400);
     pop()
 
     strokeWeight(2)
@@ -97,6 +97,9 @@ function draw() {
     textSize(100);
     fill(255)
     text("MIDNIGHT RUN", 0, 0);
+
+    textSize(25)
+    text("10 YEARS ANNIVERSARY", 0, 120);
 
 
     fill(255)

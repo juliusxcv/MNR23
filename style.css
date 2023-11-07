@@ -26,6 +26,7 @@ h1 {
     font-size: 15vw;
     display: flex;
     color: #000000;
+    margin: 0px;
 }
 
 .MNRTitle {
@@ -33,11 +34,14 @@ h1 {
     line-height: 10vw;
     display: flex;
     color: #000000;
+
 }
 
 h2 {
     font-size: 5vw;
     /* display: flex; */
+    margin: 0px;
+
 }
 
 h3 {
@@ -65,7 +69,8 @@ a:hover {
 #typoblock {
     height: 90vh;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    margin-top: 5vh;
     margin-left: 10vw;
     margin-right: 10vw;
     /* background-color: aqua; */
