@@ -6,6 +6,7 @@ const xSpan = document.querySelector('#x');
 const ySpan = document.querySelector('#y');
 
 let canvas;
+let hueFun
 
 window.setInterval(function(){
         const slntValue = Math.floor(Math.random() * 90 - 45)
@@ -22,17 +23,21 @@ function setup() {
     canvas.parent('canvasContent');
     pixelDensity(1);
     background(0, 0,0,0);
+    colorMode(HSB);
 }
 
 function draw() {
+
     stroke(255);
     strokeWeight(1);
-    fill(0);
+    let hueFun = noise(frameCount * 0.01) * 360;
+    fill(hueFun, 100, 100);
     let size = noise(frameCount * 0.01) * 200;
     ellipse(mouseX, mouseY, size, size);
-    
+
     xSpan.innerText = floor(mouseX);
     ySpan.innerText = floor(mouseY);
+
 }
 
 function windowResized() {
